@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Dəvətnaməsi - Araz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #0f0f0f 0%, #1c1c1c 100%);
+            color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px 10px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            border-radius: 24px;
+            padding: 40px 25px;
+            text-align: center;
+            max-width: 420px;
+            width: 100%;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+            position: relative;
+        }
+        .subtitle {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 11px;
+            color: #d4af37;
+            margin-bottom: 18px;
+        }
+        .names {
+            font-family: 'Great Vibes', cursive;
+            font-size: 48px;
+            color: #d4af37;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+        }
+        .text {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #dddddd;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+        .details-box {
+            border-top: 1px dashed rgba(212, 175, 55, 0.3);
+            border-bottom: 1px dashed rgba(212, 175, 55, 0.3);
+            padding: 22px 0;
+            margin-bottom: 25px;
+        }
+        .date {
+            font-size: 19px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 6px;
+        }
+        .time {
+            font-size: 14px;
+            color: #d4af37;
+            margin-bottom: 12px;
+        }
+        .location {
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        .countdown {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 25px;
+        }
+        .time-box {
+            background: rgba(212, 175, 55, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            padding: 10px;
+            border-radius: 12px;
+            min-width: 65px;
+        }
+        .time-box span {
+            display: block;
+        }
+        .number {
+            font-size: 20px;
+            font-weight: 600;
+            color: #d4af37;
+        }
+        .label {
+            font-size: 10px;
+            color: #aaaaaa;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 14px 0;
+            background: linear-gradient(45deg, #d4af37, #f3e5ab);
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 30px;
+            margin-bottom: 12px;
+            transition: 0.3s;
+            font-size: 14px;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #d4af37;
+            color: #d4af37;
+        }
+        .music-btn {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background: rgba(212, 175, 55, 0.15);
+            border: 1px solid #d4af37;
+            color: #d4af37;
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <button class="music-btn" onclick="toggleMusic()" id="mBtn">🎵</button>
+        
+        <div class="subtitle">Toy Dəvətnaməsi</div>
+        <div class="names">Araz</div>
+        
+        <p class="text">
+            Həyatımızın ən özəl və xoşbəxt günündə sizi də aramızda görməkdən şad olarıq!
+        </p>
+
+        <div class="details-box">
+            <div class="date">5 Noyabr 2026</div>
+            <div class="time">Saat: 18
